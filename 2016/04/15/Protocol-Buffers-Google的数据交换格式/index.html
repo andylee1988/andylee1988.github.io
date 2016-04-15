@@ -38,7 +38,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="代码片段,源代码," />
 
 
 
@@ -54,15 +54,19 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="失护委">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="概述Protocol Buffers是什么呢，Protocol Buffers是一个灵活高效可序列化的数据交换格式，比起传统的XML方式，它更简单，更小巧，更快，更少歧义，并且能很方便的生成访问数据的类，不需要额外的解析器。
+Protocol Buffers源代码Protocol Buffers的源代码在Github上：https://github.com/google/protobuf,目前支持">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Protocol Buffers - Google的数据交换格式">
+<meta property="og:url" content="http://yoursite.com/2016/04/15/Protocol-Buffers-Google的数据交换格式/index.html">
 <meta property="og:site_name" content="失护委">
-<meta property="og:description">
+<meta property="og:description" content="概述Protocol Buffers是什么呢，Protocol Buffers是一个灵活高效可序列化的数据交换格式，比起传统的XML方式，它更简单，更小巧，更快，更少歧义，并且能很方便的生成访问数据的类，不需要额外的解析器。
+Protocol Buffers源代码Protocol Buffers的源代码在Github上：https://github.com/google/protobuf,目前支持">
+<meta property="og:updated_time" content="2016-04-15T03:48:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="失护委">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Protocol Buffers - Google的数据交换格式">
+<meta name="twitter:description" content="概述Protocol Buffers是什么呢，Protocol Buffers是一个灵活高效可序列化的数据交换格式，比起传统的XML方式，它更简单，更小巧，更快，更少歧义，并且能很方便的生成访问数据的类，不需要额外的解析器。
+Protocol Buffers源代码Protocol Buffers的源代码在Github上：https://github.com/google/protobuf,目前支持">
 
 
 
@@ -80,7 +84,7 @@
   };
 </script>
 
-  <title> 失护委 </title>
+  <title> Protocol Buffers - Google的数据交换格式 | 失护委 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -101,9 +105,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -180,9 +182,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -202,10 +204,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/04/15/Protocol-Buffers-Google的数据交换格式/" itemprop="url">
-                  Protocol Buffers - Google的数据交换格式
-                </a>
+                Protocol Buffers - Google的数据交换格式
               
             
           </h1>
@@ -252,9 +251,7 @@
       
 
       
-        
-          
-            <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Protocol Buffers是什么呢，Protocol Buffers是一个灵活高效可序列化的数据交换格式，比起传统的XML方式，它更简单，更小巧，更快，更少歧义，并且能很方便的生成访问数据的类，不需要额外的解析器。</p>
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Protocol Buffers是什么呢，Protocol Buffers是一个灵活高效可序列化的数据交换格式，比起传统的XML方式，它更简单，更小巧，更快，更少歧义，并且能很方便的生成访问数据的类，不需要额外的解析器。</p>
 <h2 id="Protocol-Buffers源代码"><a href="#Protocol-Buffers源代码" class="headerlink" title="Protocol Buffers源代码"></a>Protocol Buffers源代码</h2><p>Protocol Buffers的源代码在Github上：<a href="https://github.com/google/protobuf" target="_blank" rel="external">https://github.com/google/protobuf</a>,目前支持的语言有C++、Java、Python、Objective-C、C#、JavaNano、JavaScript、Ruby、Go、PHP。<br>Protocol Buffers源代码由两部分组成：<br>1、Protocol Buffers代码生成器，可以根据数据描述文件（.proto）生成指定语言的的数据模型类。<br>2、生成的数据模型类序列化与反序列化需要用到的基础依赖代码。</p>
 <h2 id="Protocol-Buffers代码生成器的安装与使用"><a href="#Protocol-Buffers代码生成器的安装与使用" class="headerlink" title="Protocol Buffers代码生成器的安装与使用"></a>Protocol Buffers代码生成器的安装与使用</h2><p>如果你是C++使用者，可以按照<a href="https://github.com/google/protobuf/blob/master/src/README.md" target="_blank" rel="external">C++ Installation Instructions</a>安装Protocol Buffers代码生成器,Objective-c使用者则可以直接下载一个pre-built binary: <a href="https://github-cloud.s3.amazonaws.com/releases/23357588/1e8d5934-aef9-11e5-85de-6a4c0d4773f1.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160414%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20160414T040034Z&amp;X-Amz-Expires=300" target="_blank" rel="external">protobuf-objectivec-3.0.0-beta-2.tar.gz</a>,下载好了之后使用如下命令安装：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf protobuf-objectivec-3.0.0-beta-2.tar.gz </span><br><span class="line">cd protobuf-3.0.0-beta-2</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make check</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
@@ -278,354 +275,57 @@
 <p>另附使用NSKeyedArchiver做序列化的示例代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">+ (void)store:(id&lt;NSCoding&gt;)aObject to:(NSString*)strKey &#123;</span><br><span class="line">    NSMutableData *mData = [[NSMutableData alloc] init];</span><br><span class="line">    NSKeyedArchiver *myKeyedArchiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:mData];</span><br><span class="line">    [myKeyedArchiver encodeObject:aObject];</span><br><span class="line">    [myKeyedArchiver finishEncoding];</span><br><span class="line">    [[NSUserDefaults standardUserDefaults] setObject:mData forKey:strKey];</span><br><span class="line">    [[NSUserDefaults standardUserDefaults] synchronize];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (id)getObject:(NSString*)strKey &#123;</span><br><span class="line">    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:strKey];</span><br><span class="line">    if (data) &#123;</span><br><span class="line">        NSKeyedUnarchiver *myKeyedUnarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];</span><br><span class="line">        id aObject = [myKeyedUnarchiver decodeObject];</span><br><span class="line">        return aObject;</span><br><span class="line">    &#125;</span><br><span class="line">    return nil;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
     <div>
       
+        
+      
     </div>
 
     <div>
+      
+        
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/13/swizzlingMethod方法混写示例/" itemprop="url">
-                  swizzlingMethod方法混写示例
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-13T20:31:43+08:00" content="2016-04-13">
-              2016-04-13
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/13/swizzlingMethod方法混写示例/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/13/swizzlingMethod方法混写示例/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/代码片段-源代码/" rel="tag">#代码片段,源代码</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>记得头文件里面<code>#import &lt;objc/runtime.h&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">+ (void)load &#123;</span><br><span class="line">	static dispatch_once_t onceToken;</span><br><span class="line">	dispatch_once(&amp;onceToken, ^&#123;</span><br><span class="line">		[self swizzlingMethod:@selector(executeQuery:) with:@selector(swizzling_executeQuery:)];</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (void)swizzlingMethod:(SEL)selector1 with:(SEL)selector2 &#123;</span><br><span class="line">	Method originalMethod = class_getInstanceMethod([self class], selector1);</span><br><span class="line">	Method swizzlingMethod = class_getInstanceMethod([self class], selector2);</span><br><span class="line">	method_exchangeImplementations(originalMethod, swizzlingMethod);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/04/13/swizzlingMethod方法混写示例/" rel="next" title="swizzlingMethod方法混写示例">
+                <i class="fa fa-chevron-left"></i> swizzlingMethod方法混写示例
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/04/11/统计代码行数和字符数/" itemprop="url">
-                  统计代码行数和字符数
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-11T18:25:01+08:00" content="2016-04-11">
-              2016-04-11
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/11/统计代码行数和字符数/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/11/统计代码行数和字符数/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <ul>
-<li><p>代码行数：</p>
-<p><code>find . -exec wc -l {} \+ | tail -n 1</code></p>
-</li>
-<li><p>代码字符数：</p>
-<p><code>find . -exec wc -c {} \+ | tail -n 1</code></p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/11/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-11T17:37:44+08:00" content="2016-04-11">
-              2016-04-11
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/11/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/11/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -633,6 +333,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -652,8 +363,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/default_avatar.jpg"
@@ -698,6 +418,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Protocol-Buffers源代码"><span class="nav-number">2.</span> <span class="nav-text">Protocol Buffers源代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Protocol-Buffers代码生成器的安装与使用"><span class="nav-number">3.</span> <span class="nav-text">Protocol Buffers代码生成器的安装与使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Protocol-Buffers生成器生成的代码的使用"><span class="nav-number">4.</span> <span class="nav-text">Protocol Buffers生成器生成的代码的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Protocol-Buffers与JSON"><span class="nav-number">5.</span> <span class="nav-text">Protocol Buffers与JSON</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -794,6 +525,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
@@ -810,9 +545,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'andylee1988';
-      var disqus_identifier = 'index.html';
-      var disqus_title = '';
-      var disqus_url = '';
+      var disqus_identifier = '2016/04/15/Protocol-Buffers-Google的数据交换格式/';
+      var disqus_title = 'Protocol Buffers - Google的数据交换格式';
+      var disqus_url = 'http://yoursite.com/2016/04/15/Protocol-Buffers-Google的数据交换格式/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -823,6 +558,8 @@
       }
 
       run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
       
     </script>
   
